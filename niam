@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func creativeHelloWorld() {
+	message := "Hello, World!"
+	for _, char := range message {
+		fmt.Printf("%c", char)
+		time.Sleep(100 * time.Millisecond)
+	}
+	fmt.Println()
+}
+
+func main() {
+	creativeHelloWorld()
+}
